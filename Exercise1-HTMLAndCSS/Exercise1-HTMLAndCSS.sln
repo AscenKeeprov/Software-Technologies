@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WelcomeToHTML", "WelcomeToHTML", "{CECC88BF-2C3A-4299-8DE9-32AAB554D106}"
+	ProjectSection(SolutionItems) = preProject
+		WelcomeToHTML\welcome.html = WelcomeToHTML\welcome.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Headings", "Headings", "{36BF834D-FF90-4B66-B510-BC130E49F4B6}"
+	ProjectSection(SolutionItems) = preProject
+		Headings\headings.html = Headings\headings.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Paragraphs", "Paragraphs", "{CEDDC028-FF2D-42D6-B6A0-09899725A8BE}"
+	ProjectSection(SolutionItems) = preProject
+		Paragraphs\paragraphs.html = Paragraphs\paragraphs.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyTODOList", "MyTODOList", "{7163F81E-A34B-458F-AC96-A7AAE4E5278A}"
+	ProjectSection(SolutionItems) = preProject
+		MyTODOList\todo.html = MyTODOList\todo.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HelloHTML", "HelloHTML", "{0D0022FA-9C28-4369-BA85-E0B9AD4D6F4B}"
+	ProjectSection(SolutionItems) = preProject
+		HelloHTML\hello.html = HelloHTML\hello.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{70F98B2C-ECED-41CB-A7E0-09CD5D556E12}"
+	ProjectSection(SolutionItems) = preProject
+		Website\hello.html = Website\hello.html
+		Website\home.html = Website\home.html
+		Website\todo.html = Website\todo.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fruits", "Fruits", "{69CDF94B-777A-45AF-9E54-EBB23F5D410F}"
+	ProjectSection(SolutionItems) = preProject
+		Fruits\fruits.html = Fruits\fruits.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{12E2420C-81DE-47C6-BE04-1E036702D115}"
+	ProjectSection(SolutionItems) = preProject
+		Forms\contact.html = Forms\contact.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Colors", "Colors", "{22259867-315A-4FF4-9A6F-81DD2A54938C}"
+	ProjectSection(SolutionItems) = preProject
+		Colors\colors.css = Colors\colors.css
+		Colors\colors.html = Colors\colors.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Borders", "Borders", "{A171D482-BC0D-418C-BBFD-ACEA4246C646}"
+	ProjectSection(SolutionItems) = preProject
+		Borders\borders.css = Borders\borders.css
+		Borders\borders.html = Borders\borders.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rectangles", "Rectangles", "{27D01B2D-CFA4-4E42-8710-31EFA808765E}"
+	ProjectSection(SolutionItems) = preProject
+		Rectangles\rectangles.css = Rectangles\rectangles.css
+		Rectangles\rectangles.html = Rectangles\rectangles.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{22CBEF0B-7C7F-4806-B59D-EF9B79A26065}"
+	ProjectSection(SolutionItems) = preProject
+		Fruits\images\apple.png = Fruits\images\apple.png
+		Fruits\images\banana.png = Fruits\images\banana.png
+		Fruits\images\kiwi.png = Fruits\images\kiwi.png
+		Fruits\images\orange.png = Fruits\images\orange.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Languages", "Languages", "{F6E6CBDB-DC1A-4775-B1CB-21488B16ADB8}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\languages.css = Languages\languages.css
+		Languages\languages.html = Languages\languages.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContactUsForm", "ContactUsForm", "{3EAD1E54-4B11-4D75-A22E-D1A6A536CC28}"
+	ProjectSection(SolutionItems) = preProject
+		ContactUsForm\contact-us-form.css = ContactUsForm\contact-us-form.css
+		ContactUsForm\contact-us-form.html = ContactUsForm\contact-us-form.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{22CBEF0B-7C7F-4806-B59D-EF9B79A26065} = {69CDF94B-777A-45AF-9E54-EBB23F5D410F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C32161A-A3B9-435B-AC04-C65F14831504}
+	EndGlobalSection
+EndGlobal

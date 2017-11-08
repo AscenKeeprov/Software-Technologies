@@ -1,0 +1,20 @@
+﻿p {
+    border-radius: 10px;
+    background-color: lightgray;
+    /*display: table;*/
+    font-size: 20pt;
+    /*padding: 0px 20px 0px 20px;*/
+    text-align: center;
+}
+
+.redParagraph {
+    border: 2px solid red;
+}
+
+.greenParagraph {
+    border: 2px solid green;
+}
+
+.blueParagraph {
+    border: 2px solid blue;
+}

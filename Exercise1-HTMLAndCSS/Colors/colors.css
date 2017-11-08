@@ -1,0 +1,17 @@
+﻿body
+{
+    font-size: 19px;
+}
+
+.redText
+{
+    color: red;
+}
+
+.greenText {
+    color: green;
+}
+
+.blueText {
+    color: blue;
+}
