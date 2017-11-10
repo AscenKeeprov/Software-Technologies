@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F48A817F-5605-4FD8-A4E8-CA51230AF19F}"
+	ProjectSection(SolutionItems) = preProject
+		createnewpost.html = createnewpost.html
+		index.html = index.html
+		indexlogged.html = indexlogged.html
+		login.html = login.html
+		register.html = register.html
+		viewpost.html = viewpost.html
+		viewpostlogged.html = viewpostlogged.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{B82F7BEE-77D3-49DF-84AC-974AB11A3235}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\bootstrap.js = scripts\bootstrap.js
+		scripts\jquery-1.10.2.js = scripts\jquery-1.10.2.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "styles", "styles", "{B8AA6D5A-CD0C-4634-8802-90E5643DF9F1}"
+	ProjectSection(SolutionItems) = preProject
+		styles\style.css = styles\style.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {531EECDB-0B22-45B1-AD43-1BECBDF2186B}
+	EndGlobalSection
+EndGlobal
