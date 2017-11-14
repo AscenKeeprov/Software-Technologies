@@ -259,3 +259,24 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Node.JS
+.npm
+*.csv
+*.dat
+*.gz
+*.log
+*.out
+*.pid
+*.pid.lock
+*.seed
+*.swp
+lib-cov
+logs
+node_modules
+npm-debug.log
+package.json
+package-lock.json
+pids
+readme.md
+results
