@@ -1,0 +1,9 @@
+{
+  "name": "multiply-or-divide-number",
+  "version": "0.0.0",
+  "description": "MultiplyOrDivideNumber",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

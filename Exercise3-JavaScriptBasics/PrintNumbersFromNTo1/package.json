@@ -1,0 +1,9 @@
+{
+  "name": "print-numbers-from-nto1",
+  "version": "0.0.0",
+  "description": "PrintNumbersFromNTo1",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

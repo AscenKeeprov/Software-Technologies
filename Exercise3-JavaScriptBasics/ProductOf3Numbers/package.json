@@ -1,0 +1,9 @@
+{
+  "name": "product-of3-numbers",
+  "version": "0.0.0",
+  "description": "ProductOf3Numbers",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

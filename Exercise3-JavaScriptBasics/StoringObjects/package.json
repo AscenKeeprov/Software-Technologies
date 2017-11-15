@@ -1,0 +1,9 @@
+{
+  "name": "storing-objects",
+  "version": "0.0.0",
+  "description": "StoringObjects",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

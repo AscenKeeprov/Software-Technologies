@@ -1,0 +1,9 @@
+{
+  "name": "multiply-two-numbers",
+  "version": "0.0.0",
+  "description": "MultiplyTwoNumbers",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

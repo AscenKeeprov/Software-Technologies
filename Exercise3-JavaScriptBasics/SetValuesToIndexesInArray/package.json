@@ -1,0 +1,9 @@
+{
+  "name": "set-values-to-indexes-in-array",
+  "version": "0.0.0",
+  "description": "SetValuesToIndexesInArray",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

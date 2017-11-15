@@ -1,0 +1,9 @@
+{
+  "name": "print-lines",
+  "version": "0.0.0",
+  "description": "PrintLines",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

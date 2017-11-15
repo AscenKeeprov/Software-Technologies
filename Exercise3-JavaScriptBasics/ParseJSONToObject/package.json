@@ -1,0 +1,9 @@
+{
+  "name": "parse-jsonto-object",
+  "version": "0.0.0",
+  "description": "ParseJSONToObject",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

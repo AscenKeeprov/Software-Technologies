@@ -1,0 +1,9 @@
+{
+  "name": "add-or-remove-elements",
+  "version": "0.0.0",
+  "description": "AddOrRemoveElements",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

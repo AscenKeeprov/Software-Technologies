@@ -1,0 +1,9 @@
+{
+  "name": "turn-object-into-json",
+  "version": "0.0.0",
+  "description": "TurnObjectIntoJSON",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

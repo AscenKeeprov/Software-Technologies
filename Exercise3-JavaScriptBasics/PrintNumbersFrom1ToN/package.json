@@ -1,0 +1,9 @@
+{
+  "name": "print-numbers-from1-to-n",
+  "version": "0.0.0",
+  "description": "PrintNumbersFrom1ToN",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "work-with-key-value-pairs",
+  "version": "0.0.0",
+  "description": "WorkWithKeyValuePairs",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

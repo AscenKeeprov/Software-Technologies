@@ -1,0 +1,9 @@
+{
+  "name": "multiple-values-for-akey",
+  "version": "0.0.0",
+  "description": "MultipleValuesForAKey",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}

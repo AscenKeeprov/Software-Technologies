@@ -1,0 +1,9 @@
+{
+  "name": "print-numbers-in-reverse",
+  "version": "0.0.0",
+  "description": "PrintNumbersInReverse",
+  "main": "app.js",
+  "author": {
+    "name": "Asen Kiprov"
+  }
+}
