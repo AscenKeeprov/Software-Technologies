@@ -262,14 +262,17 @@ __pycache__/
 
 # Node.JS
 .npm
+.npmrc
 *.csv
 *.dat
 *.gz
 *.log
+*.orig
 *.out
 *.pid
 *.pid.lock
 *.seed
+*.svn
 *.swp
 lib-cov
 logs
