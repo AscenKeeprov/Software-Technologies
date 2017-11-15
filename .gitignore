@@ -275,7 +275,6 @@ lib-cov
 logs
 node_modules
 npm-debug.log
-package.json
 package-lock.json
 pids
 readme.md
