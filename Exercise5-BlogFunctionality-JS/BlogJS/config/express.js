@@ -1,0 +1,36 @@
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const passport = require('passport');
+
+module.exports = (app, config) => {
+    // View engine setup.
+    app.set('views', path.join(config.rootFolder, '/views'));
+    app.set('view engine', 'hbs');
+
+    // Request data parsing setup.
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({extended: true}));
+
+    // We will use cookies.
+    app.use(cookieParser());
+
+    // Session is storage for cookies, which will be de/encrypted with that 'secret' key.
+    app.use(session({secret: 's3cr3t5tr1ng', resave: false, saveUninitialized: false}));
+
+    // We will use passport module for user validation.
+    app.use(passport.initialize());
+    app.use(passport.session());
+
+    app.use((req, res, next) => {
+        if(req.user){
+            res.locals.user = req.user;
+        }
+        next();
+    });
+
+    // This makes the content in the "public" folder accessible to every user.
+    app.use(express.static(path.join(config.rootFolder, 'public')));
+};
