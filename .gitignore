@@ -261,7 +261,7 @@ __pycache__/
 *.pyc
 
 # Node.JS
-!bin/www
+!**[Bb]in/www
 .npm
 .npmrc
 *.csv
