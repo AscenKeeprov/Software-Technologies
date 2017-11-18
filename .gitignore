@@ -18,6 +18,7 @@
 x64/
 x86/
 bld/
+[Bb]in/
 [Oo]bj/
 [Ll]og/
 
@@ -191,7 +192,6 @@ ClientBin/
 *.jfm
 *.pfx
 *.publishsettings
-node_modules/
 orleans.codegen.cs
 
 # Since there are multiple workflows, uncomment next line to ignore bower_components
@@ -260,7 +260,7 @@ __pycache__/
 *.pyc
 
 # Node.JS
-!/bin/www
+!bin/www
 .npm
 .npmrc
 *.csv
