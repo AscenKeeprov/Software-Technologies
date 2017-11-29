@@ -259,7 +259,7 @@ paket-files/
 __pycache__/
 *.pyc
 
-# Node.JS
+# JavaScript/Node.JS
 !bin/www
 .npm
 .npmrc
@@ -282,3 +282,9 @@ package-lock.json
 pids
 readme.md
 results
+
+# PHP/Symfony
+!bin/console
+composer.lock
+var/
+vendor/
