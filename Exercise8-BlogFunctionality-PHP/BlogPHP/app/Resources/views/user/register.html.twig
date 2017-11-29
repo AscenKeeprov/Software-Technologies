@@ -1,0 +1,44 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-horizontal" name="register" action="{{ path("user_register") }}" method="POST">
+            <fieldset>
+                {{ form_row(form._token) }}
+                <legend>Register</legend>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="regName">Full Name</label>
+                    <div class="col-sm-4 ">
+                        <input type="text" class="form-control" id="regName" name="user[fullName]" pattern="[\w ]{3,}"
+                               oninvalid="setCustomValidity('Name must be at least 3 characters long!')" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="regEmail">E-mail Address</label>
+                    <div class="col-sm-4 ">
+                        <input type="email" class="form-control" id="regEmail" name="user[email]"
+                               pattern="\w{2,}\@\w{3,}\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2})?"
+                               oninvalid="setCustomValidity('Invalid e-mail address!')" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 control-label" for="regPassword">Password</label>
+                    <div class="col-sm-4 ">
+                        <input type="password" class="form-control" id="regPassword" name="user[password]" pattern="\S{8,16}"
+                               oninvalid="setCustomValidity('Password must be between 8 and 16 characters long!')" required/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                        <a class="btn btn-default" href="/">Cancel</a>
+                    </div>
+                </div>
+                <input type="hidden" name="user[username]" value="null"/>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('register') }}"/>
+            </fieldset>
+        </form>
+    </div>
+</div>
+{% endblock %}

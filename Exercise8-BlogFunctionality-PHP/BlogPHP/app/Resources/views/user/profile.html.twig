@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<div class="container body-content">
+    <div class="row">
+        <div class="col-md-6">
+            <legend>Profile</legend>
+            <hr noshade="true">
+            <p>
+                Name:&emsp;{{ app.user.fullName }}
+                <br>
+                E-mail:&emsp;{{ app.user.email }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

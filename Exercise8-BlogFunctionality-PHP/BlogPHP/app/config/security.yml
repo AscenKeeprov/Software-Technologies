@@ -1,0 +1,55 @@
+# https://symfony.com/doc/current/reference/configuration/security.html
+# https://symfony.com/doc/current/best_practices/security.html
+# https://symfony.com/doc/current/security.html
+security:
+
+    # https://symfony.com/doc/current/security.html#c-encoding-the-user-s-password
+    encoders:
+        BlogBundle\Entity\User:
+                    algorithm: bcrypt
+                    cost: 4
+
+    # https://symfony.com/doc/current/security/entity_provider.html
+    providers:
+        database_users:
+            entity: { class: BlogBundle:User, property: username }
+
+    firewalls:
+        secured_area:
+            # https://symfony.com/doc/current/security/firewall_restriction#restricting-by-pattern
+            pattern: ^/
+
+            anonymous: true
+
+            # https://symfony.com/doc/current/security/firewall_restriction.html#restricting-by-host
+            # host: 127.0.0.1:8000
+
+            # https://symfony.com/doc/current/security/firewall_restriction.html#restricting-by-http-methods
+            # methods: [GET, POST]
+
+            provider: database_users
+
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            http_basic: ~
+
+            # https://symfony.com/doc/current/reference/configuration/security.html#form-login-configuration
+            # https://symfony.com/doc/current/security/form_login_setup.html
+            form_login:
+                # https://symfony.com/doc/current/reference/configuration/security.html#check-path
+                check_path: user_login
+
+                # https://symfony.com/doc/current/reference/configuration/security.html#login-path
+                login_path: user_login
+
+                # https://symfony.com/doc/current/security/csrf_in_login_form.html
+                csrf_token_generator: security.csrf.token_manager
+
+            # https://symfony.com/doc/current/security.html#logging-out
+            logout:
+                path: user_logout
+                target: blog_index
+
+    # https://symfony.com/doc/current/security/access_control.html
+    # access_control:
+        # https://symfony.com/doc/current/security.html#roles
+        # - { path: '^/(%locale%)/admin', roles: ROLE_ADMIN }
