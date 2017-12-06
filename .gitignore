@@ -248,7 +248,7 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
-# JetBrains Rider
+# JetBrains products
 .idea/
 *.sln.iml
 
@@ -288,3 +288,7 @@ results
 composer.lock
 var/
 vendor/
+
+#Java/Spring
+!*.iml
+!pom.xml
