@@ -1,0 +1,25 @@
+﻿@model List<BlogCS.Models.Article>
+@{ ViewBag.Title = "Articles"; }
+
+@foreach (var article in Model.OrderByDescending(a => a.DateAdded))
+{
+<div class="container">
+    <article>
+        <header>
+            @Html.ActionLink(@article.Title, "Details", "Article", new { @id = article.Id }, new { @class = "article-title" })
+        </header>
+        <content class="article-content">
+            @if (article.Content.Length > 325)
+            {
+            @String.Join(String.Empty, article.Content.Take(325))
+            @:&nbsp;&hellip;
+            }
+            else
+            { @article.Content}
+        </content>
+        <footer class="article-footer" style="font-style:italic">
+            by @article.Author.FullName, on @article.DateAdded.ToString("dd-MMM-yyyy")
+        </footer>
+    </article>
+</div>
+}

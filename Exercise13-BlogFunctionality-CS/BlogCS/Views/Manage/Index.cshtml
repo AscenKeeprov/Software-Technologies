@@ -1,0 +1,62 @@
+﻿@model BlogCS.Models.IndexViewModel
+@{ ViewBag.Title = "Manage"; }
+
+<div class="container">
+    <h2>@ViewBag.Title</h2>
+    <p class="text-success">@ViewBag.StatusMessage</p>
+    <h4>&emsp;Change your account settings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Name:</dt>
+        <dd>@Model.FullName</dd>
+        <dt>E-mail Address:</dt>
+        <dd>@Model.Email</dd>
+        <dt>Password:</dt>
+        <dd>
+            [&nbsp;
+            @if (Model.HasPassword)
+            {
+            @Html.ActionLink("Change your password", "ChangePassword", "Manage")
+            }
+            else
+            {
+            @Html.ActionLink("Create", "SetPassword", "Manage")
+            }
+            &nbsp;]
+        </dd>
+        <dt>External Logins:</dt>
+        <dd>
+            @Model.Logins.Count [
+            @Html.ActionLink("Manage", "ManageLogins", "Manage") ]
+        </dd>
+        <dt>Phone Number:</dt>
+        <dd>
+            @(Model.PhoneNumber ?? "None")
+            [&nbsp;
+            @if (Model.PhoneNumber != null)
+            {
+            @Html.ActionLink("Change", "AddPhoneNumber", "Manage")
+            @:&nbsp;]&nbsp;
+                using (Html.BeginForm("RemovePhoneNumber", "Manage", FormMethod.Post, new { @class = "form-horizontal", @style = "display:inline-block" }))
+                {
+                @Html.AntiForgeryToken()
+                @:[
+                <input type="submit" class="btn-link" value="Remove" />
+                @:&nbsp;]
+                }
+            }
+            else
+            {
+            @Html.ActionLink("Add", "AddPhoneNumber", "Manage")
+            @:&nbsp;]
+            }
+        </dd>
+        <dt>Two-Factor Authentication:</dt>
+        <dd>
+            <p>
+                There are no two-factor authentication providers configured. See <a href="https://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
+                for details on setting up this ASP.NET application to support two-factor authentication.
+            </p>
+        </dd>
+    </dl>
+</div>

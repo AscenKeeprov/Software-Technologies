@@ -1,0 +1,25 @@
+﻿@model BlogCS.Models.Article
+@{ ViewBag.Title = "Details"; }
+
+<div class="container">
+    <article>
+        <header class="article-header">
+            @Model.Title
+        </header>
+        <small>by @Model.Author.FullName, on @Model.DateAdded</small>
+        <hr />
+        <p>
+            <content class="article-content">
+                @Model.Content
+            </content>
+        </p>
+        <footer class="article-footer">
+            @if (User.IsInRole("Admin") || User.Identity.Name.Equals(Model.Author.UserName))
+            {
+            @Html.ActionLink("Edit", "Edit", "Article", new { @id = Model.Id }, new { @class = "btn btn-warning" })
+            @Html.ActionLink("Delete", "Delete", "Article", new { @id = Model.Id }, new { @class = "btn btn-danger" })
+            }
+            @Html.ActionLink("Back", "List", "Article", null, new { @class = "btn btn-default" })
+        </footer>
+    </article>
+</div>

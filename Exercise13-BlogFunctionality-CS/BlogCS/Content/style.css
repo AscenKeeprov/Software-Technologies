@@ -1,0 +1,301 @@
+@font-face {
+    font-family: Aldrich;
+    src: url('../fonts/Aldrich.woff2') format('woff2');
+}
+
+.alert-danger {
+    background-color: transparent;
+    text-align: center;
+}
+
+article {
+    overflow: auto;
+}
+
+.article-content {
+    display: block;
+    font-size: 15px;
+    margin: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.article-footer {
+    font-size: 13px;
+    float: right;
+}
+
+.article-header {
+    font-size: x-large;
+    margin: 5px;
+}
+
+.article-title {
+    font-size: x-large;
+    color: #4a9c3e;
+}
+
+.article-title:hover {
+    color: #ace480;
+}
+
+body {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    color: #7a7e7c;
+    font-family: Aldrich, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body-footer {
+    text-align: center;
+    mix-blend-mode: difference;
+}
+
+.body-footer a {
+    color: palevioletred;
+}
+
+.body-footer a:hover,
+.body-footer a:focus {
+    color: blueviolet;
+}
+
+.btn {
+    margin: 4px;
+}
+
+.btn-default {
+    background-color: whitesmoke;
+}
+
+.btn-default:hover {
+    background-color: ghostwhite;
+}
+
+.btn-link {
+    color: #4a9c3e;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #ace480;
+}
+
+.btn-primary {
+	color: #7a7e7c;
+	background-color: #ace480;
+	border-color: #ace480;
+}
+
+.btn-primary:hover {
+    background-color: #4a9c3e;
+    border-color: #4a9c3e;
+}
+
+.col-sm-6 {
+    padding: 5px;
+}
+
+.container {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #ace480;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25%;
+    min-width: 240px;
+    padding: 10px;
+    width: 50%;
+}
+
+.control-label {
+    display: inline-table;
+}
+
+dl {
+    margin: 0px;
+}
+
+.dl-horizontal dd {
+    margin-left: 310px;
+}
+
+.dl-horizontal dd a {
+    color: #4a9c3e;
+}
+
+.dl-horizontal dd a:hover,
+.dl-horizontal dd a:hover {
+    color: #ace480;
+}
+
+.dl-horizontal dt {
+    width: 300px;
+    white-space: normal;
+}
+
+dt {
+    font-weight: lighter;
+}
+
+.form-control {
+    border: 2px solid #ace480;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-referrer {
+    float: right;
+    margin-right: 5px;
+}
+
+.form-referrer > a {
+    color: #ace480;
+}
+
+.form-referrer > a:hover,
+.form-referrer > a:focus {
+    color: #4a9c3e;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.has-warning * {
+	border: 2px solid orange;
+}
+
+.has-error * {
+	border: 2px solid orangered;
+}
+
+.has-success * {
+    border: 2px solid #4a9c3e;
+}
+
+hr {
+    clear: both;
+    display: block;
+    background-color: #ace480;
+    border: 0;
+    height: 1px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+input[type="checkbox"] {
+    margin: 5px 5px 5px -10px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+legend {
+	color: #7a7e7c;
+}
+
+main {
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.navbar {
+    margin: 0px;
+    min-height: 50px;
+    position: relative;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    min-height: 50px;
+    padding: 15px;
+}
+
+.navbar-colapse {
+    display: inline-block;
+    float: right;
+    min-height: 50px;
+}
+
+.navbar-default {
+    background-color: #ace480;
+}
+
+.navbar-default .navbar-brand {
+	color: #7a7e7c;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #7a7e7c;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+
+.navbar-header {
+    display: inline-block;
+    margin-left: 20px;
+    min-height: 50px;
+}
+
+.navbar-right {
+    margin-right: 20px;
+    min-height: 50px;
+}
+
+.navbar-toggle {
+    float: right;
+    margin: 15px;
+    padding: 10px;
+}
+
+.text-danger {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.text-success {
+    color: #ace480;
+    margin: 15px;
+}
+
+textarea {
+    max-height: 640px;
+    min-height: 34px;
+    resize: vertical;
+    overflow: auto;
+}
+
+.well {
+	padding: 20px;
+	background-color: #ffffff;
+	border: 2px solid #ace480;
+	border-radius: 5px;
+}

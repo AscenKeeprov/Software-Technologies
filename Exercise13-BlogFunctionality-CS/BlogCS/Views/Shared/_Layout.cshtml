@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title – Asen Kiprov's Blog</title>
+    @Styles.Render("~/bundles/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            @Html.ActionLink("ASEN KIPROV'S BLOG", "List", "Article", new { area = "" }, new { @class = "navbar-brand" })
+        </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+            @if (Request.IsAuthenticated)
+            {
+                var user = new BlogCS.Models.BlogDbContext().Users.Where(u => u.UserName == User.Identity.Name).First();
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink($"Hello, {user.FullName.Split(' ')[0]}!", "Index", "Manage")</li>
+                    <li>@Html.ActionLink("Create Article", "Create", "Article")</li>
+                    <li>@Html.ActionLink("Log Out", "LogOff", "Account")</li>
+                </ul>
+            }
+            else
+            {
+            <ul class="nav navbar-nav navbar-right">
+                <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                <li>@Html.ActionLink("Log in", "Login", "Account")</li>
+            </ul>
+            }
+        </div>
+    </nav>
+    <main>
+        @RenderBody()
+    </main>
+    <footer class="body-footer">
+        <p>&copy; @DateTime.Now.Year - <a href="http://softuni.foundation/" target="_blank">Software University Foundation</a></p>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
