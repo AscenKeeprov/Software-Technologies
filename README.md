@@ -1,2 +1,2 @@
 # Software-Technologies
-Code files for course Software Technologies@ SoftUni
+Code files for course Software Technologies @ SoftUni
