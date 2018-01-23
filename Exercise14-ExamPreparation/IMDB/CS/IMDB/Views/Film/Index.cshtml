@@ -1,0 +1,33 @@
+﻿@model List<IMDB.Models.Film>
+@{ ViewBag.Title = "All Films"; }
+
+<h1>All Films</h1>
+<div>
+    <button class="add-new" onclick="location.href='/create';return false;">Create New Film</button>
+</div>
+<section>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Genre</th>
+                <th>Director</th>
+                <th>Year</th>
+                <th>Actions</th>
+            </tr>
+            @foreach (var film in Model.OrderBy(f => f.Name).ThenByDescending(f => f.Year))
+            {
+            <tr>
+                <td>@film.Name</td>
+                <td>@film.Genre</td>
+                <td>@film.Director</td>
+                <td>@film.Year</td>
+                <td>
+                    <button class="edit" onclick="location.href='/edit/@film.Id';return false;">Edit</button>
+                    <button class="delete" onclick="location.href='/delete/@film.Id';return false;">Delete</button>
+                </td>
+            </tr>
+            }
+        </table>
+    </div>
+</section>

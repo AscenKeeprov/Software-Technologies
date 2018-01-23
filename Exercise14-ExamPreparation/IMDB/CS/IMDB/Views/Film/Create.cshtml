@@ -1,0 +1,27 @@
+﻿@model IMDB.Models.Film
+@{ ViewBag.Title = "Create Film"; }
+
+<h1>Create Film</h1>
+<section>
+    <div>
+    @using (Html.BeginForm("Create", "Film", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+        <label for="name">@Html.DisplayNameFor(f => f.Name)</label>
+        <input type="text" id="name" name="name" value="@Model.Name" />
+        @Html.ValidationMessageFor(f => f.Name, "", new { @class = "text-danger" })
+        <label for="genre">@Html.DisplayNameFor(f => f.Genre)</label>
+        <input type="text" id="genre" name="genre" value="@Model.Genre" />
+        @Html.ValidationMessageFor(f => f.Genre, "", new { @class = "text-danger" })
+        <label for="director">@Html.DisplayNameFor(f => f.Director)</label>
+        <input type="text" id="director" name="director" value="@Model.Director" />
+        @Html.ValidationMessageFor(f => f.Director, "", new { @class = "text-danger" })
+        <label for="year">@Html.DisplayNameFor(f => f.Year)</label>
+        <input type="text" id="year" name="year" value="@Model.Year" />
+        @Html.ValidationMessageFor(f => f.Year, "", new { @class = "text-danger" })
+        <br />
+        <button type="submit">Create</button>
+        <button class="cancel" onclick="location.href='/';return false;">Cancel</button>
+    }
+    </div>
+</section>
